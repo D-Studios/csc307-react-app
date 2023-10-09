@@ -3,12 +3,19 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd packages && cd react-frontend && npm start",
+    "build": "cd packages && cd react-frontend && npm build",
+    "test":  "cd packages && cd react-frontend && npm test",
+    "eject" : "cd packages && cd react-frontend && npm eject"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "dependencies": {
     "create-react-app": "^5.0.1"
-  }
+  },
+  "workspaces": [
+     "packages/*"
+  ]
 }
